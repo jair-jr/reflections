@@ -1,0 +1,34 @@
+==========================
+Git notes
+==========================
+
+Commands:
+
+git log
+  Shows commits ids and their messages.
+
+git clone <url>
+  Copies a repository to local file system.
+
+git diff <commit id #1> <commit id #2>
+  Shows file differences between two commits.
+
+git init
+  Initializes a git repository in the current directory, creating the ".git" meta-data directory.
+
+git status
+  Show a summary of the repository summary containing: 1) files in the staging area; 2) files out of the staging area; 3) the current branch
+
+git add <file>
+  Adds a file to the staging area.
+
+git reset HEAD <file>
+  Removes a file from the staging area.
+
+git commit -m "Message"
+  Commits the files in the staging area to the repository.
+  Note: "git commit" (whithout -m) opens the core.editor for the user to type the commit message.
+
+git config --global <property> <value>
+  Changes git configuration by setting a global property value
+  Ex.: git config --global core.editor "nano"
