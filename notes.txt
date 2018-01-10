@@ -10,8 +10,22 @@ git log
 git clone <url>
   Copies a repository to local file system.
 
-git diff <commit id #1> <commit id #2>
-  Shows file differences between two commits.
+git diff
+  git diff
+    Compares the working directory to the staging area
+
+  git diff <commit id #1> <commit id #2>
+    Compares commit #1 to commit #2.
+
+  git diff --staged
+    Compares the staging area to the most recent commit in the repository.
+
+git checkout
+  git checkout <commit id>
+    Changes the files in the working directory so that they are equal to those on <commit id>
+
+  git checkout master
+    Changes the files in the working directory so that they are equal to those on the most recent commit in the repository.
 
 git init
   Initializes a git repository in the current directory, creating the ".git" meta-data directory.
