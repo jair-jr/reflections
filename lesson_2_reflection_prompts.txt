@@ -3,9 +3,11 @@ What happens when you initialize a repository? Why do you need to do it?
 
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
+	The staging area contains the files the user wants to be committed, while the working directory may also contains files that should not be committed. The staging area allows users to selectively choose which changes they want committed to the directory.
 
 How can you use the staging area to make sure you have one commit per logical
 change?
+	One can add to the staging area only the files belonging to a specific logical change, and execute the commit. Changed files not belonging to that logical change would be in the working directory but would no be committed.
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
