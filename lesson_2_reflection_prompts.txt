@@ -18,6 +18,7 @@ How do the diagrams help you visualize the branch structure?
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+	Merging two branches is like merging the last commit of each branch in a single commit, allowing all commits on both branches to be available from a single branch (the checkedout branch when the merge was performed). The commit resulting from the merge has two parents, one from each of the merged branches.
 
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
