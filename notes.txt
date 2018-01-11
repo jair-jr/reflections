@@ -77,9 +77,9 @@ git merge
   git merge <branch #1> <branch #2>
     Merges branch #1 and #2
 
-    Note: "git merge" always merges with the checkedout branch. Therefore, branch #1 or #2 should be the checkedout branch. If a third branch, say branch #3, is checkedout, git will merge the three branches together.
+    Note: "git merge" always merges into the checkedout branch. Therefore, branch #1 or #2 should be the checkedout branch. If a third branch, say branch #3, is checkedout, git will merge the three branches together.
 
-    Note: "git merge" executes the merge and creates a new commit with the merged files in the checkedout branch. This new commit has two parents which are the last commits from branches #1 and #2.
+    Note: "git merge" executes the merge and creates a new commit containing the merged files in the checkedout branch. This new commit has two parents which are the last commits from branches #1 and #2.
 
   git merge --abort
     Undoes the merge by restoring the files to the state they were before the merge. This is useful if there is a conflict during merge.
