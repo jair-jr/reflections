@@ -66,7 +66,7 @@ git branch
     Lists the branches in the repository.
 
   git branch -a
-    Lists both remote-tracking and local branches. Remote-tracking branches are formatted like: 'remote-repository-name'/'branch-name'. Ex: origin/master
+    Lists both remote-tracking and local branches. Remote-tracking branches are a copy of the last known state of the remote repository branch stored locally. Remote-tracking branches are formatted like: <remote-repository-name>/<branch-name>. Ex: origin/master
 
   git branch <new-branch>
     Creates a new branch in the repository.
