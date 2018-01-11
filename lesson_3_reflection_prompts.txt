@@ -18,7 +18,7 @@ use one instead of another?
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
+    The main benefit is that git can track if the local repository is in-sync with the remote one, and/or vice-versa. Besides, if the repositories are out-of-sync, it can list the commits that led to that state.
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
