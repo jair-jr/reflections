@@ -85,3 +85,14 @@ git merge
     Undoes the merge by restoring the files to the state they were before the merge. This is useful if there is a conflict during merge.
 
   Notes on solving a conflict: to tell git that a conflict is solved, simply remove the occurrences of git special sections like "<<<< HEAD" or ">>> master" or "|||| merged common ancestors" from the conflicted files, add those files to the staging area, and commit. It is good practice for the commit message to contain lines refering to the conflicted files. Git already adds those lines to the message. All we have to do is to uncomment them.
+
+git remote
+
+  git remote
+    Shows the remote repositories associated with the local repository.
+
+  git remote add <remote_repository_name> <remote_url>
+    Associates a remote repository to the local one. If there is only one remote repository, it is commom practice to name it as "origin". Ex: git remote add origin git@github.com:jair-jr/reflections.git
+
+git push <remote_repository_name> <branch>
+  Sends commits in the local repository to the remote repository. Ex: git push origin master
