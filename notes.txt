@@ -84,4 +84,4 @@ git merge
   git merge --abort
     Undoes the merge by restoring the files to the state they were before the merge. This is useful if there is a conflict during merge.
 
-  Notes on solving a conflict: to tell git that a conflict is solved, simply remove the occurrences of git special sections like "<<<< HEAD" or ">>> master" or "|||| merged common ancestors" from the conflicted files, add them to the staging area and commit. It is good practice for the commit message to contain lines refering to the conflicted files. Git already adds those lines to the message. All we have to do is to uncomment them.
+  Notes on solving a conflict: to tell git that a conflict is solved, simply remove the occurrences of git special sections like "<<<< HEAD" or ">>> master" or "|||| merged common ancestors" from the conflicted files, add those files to the staging area, and commit. It is good practice for the commit message to contain lines refering to the conflicted files. Git already adds those lines to the message. All we have to do is to uncomment them.
