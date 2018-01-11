@@ -5,7 +5,11 @@ Git notes
 Commands:
 
 git log
-  Shows commits ids and their messages.
+  git log
+    Shows commits ids and their messages.
+
+  git log --graph --oneline <branch #1> <branch #2>
+    Shows commit history considering branches #1 and #2. The "--oneline" shows each commit as one single line.
 
 git clone <url>
   Copies a repository to local file system.
@@ -27,6 +31,9 @@ git checkout
   git checkout <branch>
     Changes the files in the working directory so that they are equal to those on the most recent commit in the <branch> branch.
     Ex.: git checkout master (checks out the most recent commit in the master branch)
+
+  git checkout -b <new_branch>
+    Creates a new branch and checks it out. Equivalent to: "git branch <new_branch>" "git checkout <new_branch>"
 
 git init
   Initializes a git repository in the current directory, creating the ".git" meta-data directory.
