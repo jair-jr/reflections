@@ -65,6 +65,11 @@ git branch
   git branch <new-branch>
     Creates a new branch in the repository.
 
+  git branch -d <branch-name>
+    Removes "branch-name" from the repository.
+
+    Warning: this will delete all commits in the branch "branch-name" if it has not been merged with another branch. However, if "branch-name" was merged, only the label of the branch will be deleted, while the commits will remain intact.
+
 git merge
   git merge <branch #1> <branch #2>
     Merges branch #1 and #2
