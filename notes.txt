@@ -24,8 +24,9 @@ git checkout
   git checkout <commit id>
     Changes the files in the working directory so that they are equal to those on <commit id>
 
-  git checkout master
-    Changes the files in the working directory so that they are equal to those on the most recent commit in the repository.
+  git checkout <branch>
+    Changes the files in the working directory so that they are equal to those on the most recent commit in the <branch> branch.
+    Ex.: git checkout master (checks out the most recent commit in the master branch)
 
 git init
   Initializes a git repository in the current directory, creating the ".git" meta-data directory.
@@ -46,3 +47,10 @@ git commit -m "Message"
 git config --global <property> <value>
   Changes git configuration by setting a global property value
   Ex.: git config --global core.editor "nano"
+
+git branch
+  git branch
+    Shows the branches in the repository.
+
+  git branch <new-branch>
+    Creates a new branch in the repository.
