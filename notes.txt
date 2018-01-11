@@ -96,3 +96,6 @@ git remote
 
 git push <remote_repository_name> <branch>
   Sends commits in the local repository to the remote repository. Ex: git push origin master
+
+git pull <remote_repository_name> <branch>
+  Fetches commits from the remote repository to the local repository. Ex: git pull origin master
