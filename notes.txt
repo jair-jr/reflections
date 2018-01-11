@@ -15,7 +15,7 @@ git log
     Shows only the "number-of-commits" most recent commits.
 
 git clone <url>
-  Copies a repository A to another repository B, and sets repository A as B's remote.
+  Copies a repository A to another repository B (local), and sets repository A as B's remote by the name "origin".
 
 git diff
   git diff
