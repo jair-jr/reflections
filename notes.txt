@@ -63,7 +63,10 @@ git config --global <property> <value>
 
 git branch
   git branch
-    Shows the branches in the repository.
+    Lists the branches in the repository.
+
+  git branch -a
+    Lists both remote-tracking and local branches. Remote-tracking branches are formatted like: 'remote-repository-name'/'branch-name'. Ex: origin/master
 
   git branch <new-branch>
     Creates a new branch in the repository.
@@ -98,4 +101,9 @@ git push <remote_repository_name> <branch>
   Sends commits in the local repository to the remote repository. Ex: git push origin master
 
 git pull <remote_repository_name> <branch>
-  Fetches commits from the remote repository to the local repository. Ex: git pull origin master
+  Get commits from the remote repository to the local repository. Ex: git pull origin master
+
+  Note: this command is equivalent to executing a fetch followed by a merge. Therefore, it automatically merges the remote branch with the local one if the remote repository is one or more commits ahead. Ex: "git pull origin master" = "git fetch origin" plus "git merge master origin/master"
+
+git fetch <remote_repository_name>
+  Get commits from the remote repository storing them in the remote-tracking branch (not in the currently checkedout branch).
